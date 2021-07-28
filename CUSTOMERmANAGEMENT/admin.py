@@ -5,3 +5,4 @@ from .models import *
 admin.site.register(CUSTOMER)
 admin.site.register(PRODUCT)
 admin.site.register(ORDER)
+admin.site.register(TAG)
