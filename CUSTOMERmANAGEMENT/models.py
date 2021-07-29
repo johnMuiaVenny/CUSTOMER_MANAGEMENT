@@ -51,6 +51,7 @@ class ORDER(models.Model):
     Product = models.ForeignKey(PRODUCT, on_delete=models.CASCADE)    #null=True, on_delete=models.SET_NULL
     Date_Created = models.DateTimeField(default=datetime.now)
     Status = models.CharField(max_length=200, choices=STATUS)
+    Note = models.CharField(max_length=100, null=True)
 
     def __str__(self):
         return self.Product.name
