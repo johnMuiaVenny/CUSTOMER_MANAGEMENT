@@ -1,3 +1,14 @@
 <h1>JOHN VENN</h1>
 
 <h5>Total_Orders={{Total_Orders}}</h5>
+
+<h5>Delivered={{Delivered}}</h5>
+
+<h2><u>MY CUSTOMERS</u></h2>
+
+{% for customer in customers %}
+
+<h1>{{forloop.counter}}. {{customer.name}} <a href="{% url 'CUSTOMERmANAGEMENT:FilterOrders' customer.id %}"><button>Filter Orders</button></a></h1>
+
+{% endfor %}
+

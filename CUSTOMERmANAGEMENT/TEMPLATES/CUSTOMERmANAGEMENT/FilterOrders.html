@@ -1,0 +1,19 @@
+
+
+<h1><u>FILTER {{customer}} ORDERS BY ANY OF THIS FIELDS</u></h1>
+
+<form action="">
+    {% csrf_token %}
+
+    {{myFilter.form}}
+    <input type="submit" value="Filter"/>
+</form><br>
+
+
+<h2><u>ORDER/s</u></h2>
+
+{% for order in order %}
+
+<h3>{{forloop.counter}}. {{order.Product}}, <span>{{order.Date_Created}}</span>,  <span>{{order.Status}}</span></h3>
+
+{% endfor %}
