@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CUSTOMERmANAGEMENT.apps.CustomermanagementConfig',
-    'django_filters',
+    #'django_filters',
+    'FILTAPP.apps.FiltappConfig',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'PROJECT1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'CUSTOMER',
+        'NAME': 'MACHAKOS',
         'PASSWORD': '1234',
         'PORT': '5432',
         'USER': 'postgres',
